@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header></header>
+    <div id="embed-computer" width=1000></div>
+    <main></main>
+    <footer></footer>
+  </body>
+  <script type="text/javascript" src="https://copy-cat.squiddev.cc/require.js"></script>
+  <script>
+    // Tell requirejs to load copycat/* from the website.
+    require.config({ paths: { copycat: "https://copy-cat.squiddev.cc/" } });
+    // Find our #embed-computer element and inject a computer terminal into it.
+    require(["copycat/embed"], setup => setup(document.getElementById("embed-computer")));
+  </script>
+</html>
+
+
+
+
+<!-- Any requirejs-compatible loader (https://requirejs.org/) will work. -->
+
+
